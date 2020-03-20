@@ -16,7 +16,7 @@ public class Driver {
 
     public Driver() throws SQLException, ClassNotFoundException {
         Class.forName("com.mysql.jdbc.Driver");
-        connection = DriverManager.getConnection("jdbc:mysql://localhost/stokieDatabase?autoReconnect=true&useSSL=false", "stokieDatabaseRemote", "stokieUser9714?!");
+        connection = DriverManager.getConnection("jdbc:mysql://localhost/stokieDatabase?autoReconnect=true&useSSL=false", "stokieDatabaseRemote", Passwords.driverPassword);
     }
 
     public void close() throws SQLException {
